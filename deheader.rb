@@ -12,8 +12,4 @@ class Deheader < Formula
     man1.install 'deheader.1'
     bin.install 'deheader'
   end
-
-  test do
-    system "#{bin}/deheader", '-V'
-  end
 end

@@ -12,8 +12,4 @@ class ZGo < Formula
     system 'make'
     system 'make', "PREFIX=#{prefix}", 'install'
   end
-
-  test do
-    system "#{bin}/Z", '-h'
-  end
 end
