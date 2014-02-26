@@ -10,7 +10,7 @@ class ZGo < Formula
 
   def install
     system 'make'
-    system 'make', "DESTDIR=#{prefix}", 'install'
+    system 'make', "PREFIX=#{prefix}", 'install'
   end
 
   test do
