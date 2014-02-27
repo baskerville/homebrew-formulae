@@ -13,8 +13,8 @@ class PapsBskv < Formula
   end
 
   def install
-    system './configure', '--disable-debug', '--disable-dependency-tracking',
-                          "--prefix=#{prefix}"
+    system './configure', "--prefix=#{prefix}", "--mandir=#{man}",
+                          '--disable-debug', '--disable-dependency-tracking'
     system 'make install'
   end
 end
