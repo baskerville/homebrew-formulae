@@ -6,6 +6,8 @@ class Lhasa < Formula
   sha1 '95dae252410648f629b275dedef218f81b835b3b'
   head 'https://github.com/fragglet/lhasa.git'
 
+  conflicts_with 'lha'
+
   depends_on 'pkg-config' => :build
   depends_on :autoconf
   depends_on :automake
