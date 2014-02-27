@@ -9,12 +9,12 @@ class Lhasa < Formula
   depends_on 'pkg-config' => :build
   depends_on :autoconf
   depends_on :automake
+  depends_on :libtool
 
   def install
 
-    system './autogen.sh'
-    system './configure', "--prefix=#{prefix}"
-                          '--disable-dependency-tracking'
+    system './autogen.sh', "--prefix=#{prefix}",
+                           '--disable-dependency-tracking'
     system 'make install'
   end
 end
