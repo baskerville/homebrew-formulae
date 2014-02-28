@@ -7,6 +7,8 @@ class MldonkeyBskv < Formula
 
   option 'with-minimal', 'Disable everything besides eDonkey'
 
+  conflicts_with 'mldonkey'
+
   depends_on 'pkg-config' => :build
   depends_on 'objective-caml'
   depends_on 'gd'
