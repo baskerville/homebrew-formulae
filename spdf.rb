@@ -1,11 +1,11 @@
 require 'formula'
 
 class Spdf < Formula
-  homepage 'https://github.com/examon/spdf'
-  head 'https://github.com/examon/spdf.git'
+  homepage 'https://github.com/baskerville/spdf'
+  head 'https://github.com/baskerville/spdf.git'
 
   depends_on :python
-  depends_on 'pyPdf' => :python
+  depends_on 'PyPDF2' => :python
 
   def install
     bin.install 'spdf.py' => 'spdf'
