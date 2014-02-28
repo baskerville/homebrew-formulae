@@ -8,6 +8,6 @@ class Unlzx < Formula
 
   def install
     system "#{ENV.cc} #{ENV.cflags} -o unlzx unlzx.c"
-    bin.install('unlzx')
+    bin.install 'unlzx'
   end
 end
