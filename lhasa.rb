@@ -6,7 +6,7 @@ class Lhasa < Formula
   sha1 '95dae252410648f629b275dedef218f81b835b3b'
   head 'https://github.com/fragglet/lhasa.git'
 
-  conflicts_with 'lha'
+  conflicts_with 'lha', :because => 'both install a `lha` binary'
 
   depends_on 'pkg-config' => :build
   depends_on :autoconf
@@ -14,9 +14,15 @@ class Lhasa < Formula
   depends_on :libtool
 
   def install
+    system "./autogen.sh", "--prefix=#{prefix}",
+                           "--disable-dependency-tracking"
+    system "make install"
+  end
 
-    system './autogen.sh', "--prefix=#{prefix}",
-                           '--disable-dependency-tracking'
-    system 'make install'
+  test do
+    str = "MQAtbGgwLQQAAAAEAAAA9ZQTUyACg2JVBQAA" +
+          "hloGAAFmb28FAFCkgQcAURQA9QEAAGZvbwoA"
+    system "echo #{str} | /usr/bin/base64 -D | #{bin}/lha x -"
+    assert_equal "foo\n", `cat foo`
   end
 end
