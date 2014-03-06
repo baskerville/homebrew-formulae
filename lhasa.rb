@@ -14,8 +14,7 @@ class Lhasa < Formula
   depends_on :libtool
 
   def install
-    system "./autogen.sh", "--prefix=#{prefix}",
-                           "--disable-dependency-tracking"
+    system "./autogen.sh", "--prefix=#{prefix}"
     system "make install"
   end
 
