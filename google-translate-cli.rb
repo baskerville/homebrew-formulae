@@ -1,17 +1,17 @@
-require 'formula'
+require "formula"
 
 class GoogleTranslateCli < Formula
-  homepage 'http://www.soimort.org/google-translate-cli/'
-  head 'https://github.com/soimort/google-translate-cli.git'
+  homepage "http://www.soimort.org/google-translate-cli/"
+  head "https://github.com/soimort/google-translate-cli.git"
 
-  depends_on 'gawk'
+  depends_on "gawk"
 
   def patches
     DATA
   end
 
   def install
-    bin.install 'translate.awk' => 'translate'
+    bin.install "translate.awk" => "translate"
   end
 end
 
