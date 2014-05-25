@@ -11,7 +11,8 @@ class PapsBskv < Formula
   depends_on "pango"
 
   def patches
-    "https://github.com/baskerville/dotfiles/raw/master/patches/paps-header_options.diff"
+    "https://github.com/baskerville/dotfiles/raw/macosx/patches/paps-header_options.diff"
+    "https://github.com/baskerville/dotfiles/raw/macosx/patches/paps-freetype2.diff"
   end
 
   def install
