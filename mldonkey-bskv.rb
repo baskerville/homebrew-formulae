@@ -8,7 +8,7 @@ class MldonkeyBskv < Formula
   conflicts_with "mldonkey"
 
   depends_on "pkg-config" => :build
-  depends_on "objective-caml"
+  depends_on "ocaml312"
   depends_on "miniupnpc"
   depends_on "libnatpmp"
   depends_on "gd"
