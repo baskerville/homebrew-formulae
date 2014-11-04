@@ -2,13 +2,14 @@ require "formula"
 
 class MldonkeyBskv < Formula
   homepage "http://mldonkey.sourceforge.net/Main_Page"
-  url "https://downloads.sourceforge.net/project/mldonkey/mldonkey/3.1.5/mldonkey-3.1.5.tar.bz2"
-  sha1 "7bc4f9272ecfe6403eef7062766b26bf321e3015"
+  head "https://github.com/ygrek/mldonkey.git"
 
   conflicts_with "mldonkey"
 
+  depends_on "autoconf" => :build
   depends_on "pkg-config" => :build
-  depends_on "ocaml312"
+  depends_on "ocaml"
+  depends_on "camlp4"
   depends_on "miniupnpc"
   depends_on "libnatpmp"
   depends_on "gd"
