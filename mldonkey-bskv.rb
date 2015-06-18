@@ -2,7 +2,7 @@ require "formula"
 
 class MldonkeyBskv < Formula
   homepage "http://mldonkey.sourceforge.net/Main_Page"
-  head "https://github.com/ygrek/mldonkey.git"
+  head "https://github.com/ygrek/mldonkey.git", :branch => "next"
 
   conflicts_with "mldonkey"
 
