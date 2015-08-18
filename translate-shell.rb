@@ -2,16 +2,15 @@ require "formula"
 
 class TranslateShell < Formula
   homepage "http://www.soimort.org/translate-shell"
-  url "http://www.soimort.org/translate-shell/translate-shell.tar.gz"
-  sha1 "32e35704c5d6f1f6ce2bc130967a574ac220d767"
-  version "0.9.0.6"
+  url "https://github.com/soimort/translate-shell/archive/v0.9.0.7.tar.gz"
+  sha1 "58aecf87aa134e3f8366d38ebc16d166ff186cef"
+  head "https://github.com/soimort/translate-shell.git"
 
-  depends_on "curl" => :optional
-  depends_on "fribidi" => :optional
   depends_on "gawk"
 
   def install
-    bin.install "trans"
-    man1.install "trans.1"
+    system "make"
+    bin.install "build/trans"
+    man1.install "man/trans.1"
   end
 end
