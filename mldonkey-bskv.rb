@@ -13,7 +13,7 @@ class MldonkeyBskv < Formula
   depends_on "miniupnpc"
   depends_on "libnatpmp"
   depends_on "gd"
-  depends_on :libpng
+  depends_on "libpng"
 
   def install
     # Fix compiler selection
