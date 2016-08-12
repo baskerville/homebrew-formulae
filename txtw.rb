@@ -3,7 +3,7 @@ require "formula"
 class Txtw < Formula
   homepage "https://github.com/baskerville/txtw"
   url "https://github.com/baskerville/txtw/archive/0.4.tar.gz"
-  sha1 "ba4cbb22295d44f06a3c40e0a923305d84301368"
+  sha256 "b7c974ffda5b65421daee8c015f154b2a51daf2d736df841873d9b262c868846"
   head "https://github.com/baskerville/txtw.git"
 
   depends_on "cairo"

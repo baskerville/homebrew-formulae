@@ -3,7 +3,7 @@ require "formula"
 class Xlsw < Formula
   homepage "https://github.com/baskerville/xlsw"
   url "https://github.com/baskerville/xlsw/archive/0.2.1.tar.gz"
-  sha1 "bb07987aa15a32227d8e9becab50ae54970c94c8"
+  sha256 "18e71a543afdc49dc765bda8807d71b967709e3734e010c32955dd1a70630371"
   head "https://github.com/baskerville/xlsw.git"
 
   depends_on :x11

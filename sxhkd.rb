@@ -3,7 +3,7 @@ require "formula"
 class Sxhkd < Formula
   homepage "https://github.com/baskerville/sxhkd"
   url "https://github.com/baskerville/sxhkd/archive/0.5.3.tar.gz"
-  sha1 "93b39f453ed80bff49e83595e8fcc0519beeb496"
+  sha256 "4f794ecccc03d2ecfc2fef074a09195d16ec7343c514acacf71ffa770ca4a977"
   head "https://github.com/baskerville/sxhkd.git"
 
   depends_on :x11

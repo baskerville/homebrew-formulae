@@ -3,7 +3,7 @@ require "formula"
 class Xtitle < Formula
   homepage "https://github.com/baskerville/xtitle"
   url "https://github.com/baskerville/xtitle/archive/0.3.tar.gz"
-  sha1 "e52b47f6b9e6d5ade1312c19f5b23b6d4ccb041f"
+  sha256 "cadddef1389ba1c5e1dc7dd861545a5fe11cb397a3f692cd63881671340fcc15"
   head "https://github.com/baskerville/xtitle.git"
 
   depends_on :x11

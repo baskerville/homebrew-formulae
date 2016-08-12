@@ -3,7 +3,7 @@ require "formula"
 class Xdo < Formula
   homepage "https://github.com/baskerville/xdo"
   url "https://github.com/baskerville/xdo/archive/0.4.tar.gz"
-  sha1 "aacfc71aeb264b608346912b666810f882782b6e"
+  sha256 "0b3ac57c6127799d18d27aa58b21d837b96525c6c6ae2f1433dc6d0a371e74ea"
   head "https://github.com/baskerville/xdo.git"
 
   depends_on :x11
