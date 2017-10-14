@@ -2,9 +2,10 @@ require "formula"
 
 class Stest < Formula
   homepage "http://tools.suckless.org/dmenu"
-  url "http://git.suckless.org/dmenu/snapshot/dmenu-4.5.tar.bz"
+  url "https://git.suckless.org/dmenu/snapshot/dmenu-4.7.tar.bz2"
+  version "4.7"
   head "http://git.suckless.org/dmenu", :using => :git
-  sha256 "9d52de703e324e6f681ad6c5339a05b8911e65fecf7c0b5f4731c958f728082e"
+  sha256 "9b20250abad6f590b4fa2aa310139372ca5d58b882c5bf4385f58a77104509fb"
 
   def install
     system "#{ENV.cc} #{ENV.cflags} -o stest stest.c"
