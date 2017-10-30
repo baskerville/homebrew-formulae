@@ -2,8 +2,9 @@ require "formula"
 
 class Sxhkd < Formula
   homepage "https://github.com/baskerville/sxhkd"
-  url "https://github.com/baskerville/sxhkd/archive/0.5.3.tar.gz"
-  sha256 "4f794ecccc03d2ecfc2fef074a09195d16ec7343c514acacf71ffa770ca4a977"
+  url "https://github.com/baskerville/sxhkd/archive/0.5.8.tar.gz"
+  version "0.5.8"
+  sha256 "d7df48d7d301d1cf06f45172bcfe712510e98dcdbdb896af662cf979f9666855"
   head "https://github.com/baskerville/sxhkd.git"
 
   depends_on :x11
