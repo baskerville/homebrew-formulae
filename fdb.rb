@@ -2,9 +2,9 @@ require "formula"
 
 class Fdb < Formula
   homepage "https://github.com/baskerville/fdb"
-  url "https://github.com/baskerville/fdb/archive/0.6.tar.gz"
-  version "0.6.0"
-  sha256 "258455078dddb5d1327f2d0937164eb92a5c0b7b42d6420cdbffb8a5a44d110c"
+  url "https://github.com/baskerville/fdb/archive/0.6.1.tar.gz"
+  version "0.6.1"
+  sha256 "c1eca2ce6f4c8ac5f6cdb897a942a85e2b3ec362d0c9a64ac49efbcc5adee9e3"
   head "https://github.com/baskerville/fdb.git"
 
   depends_on "rust" => :build
