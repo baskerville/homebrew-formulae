@@ -2,8 +2,8 @@ require "formula"
 
 class Xdo < Formula
   homepage "https://github.com/baskerville/xdo"
-  url "https://github.com/baskerville/xdo/archive/0.4.tar.gz"
-  sha256 "0b3ac57c6127799d18d27aa58b21d837b96525c6c6ae2f1433dc6d0a371e74ea"
+  url "https://github.com/baskerville/xdo/archive/0.5.7.tar.gz"
+  sha256 "b661229f0457939d3867cca1664c5671ae959b309feb58abe9142229c8c7ffb4"
   head "https://github.com/baskerville/xdo.git"
 
   depends_on :x11
